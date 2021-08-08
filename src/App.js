@@ -1,11 +1,16 @@
-import React from 'react';
+import React from 'react'
+import { Provider } from 'react-redux'
+import Comments from './pages/Comments'
+import configureStore from './store'
 
-function App() {
+const store = configureStore({})
+
+function App () {
   return (
-    <div className='app'>
-      <h1>Comments</h1>
-    </div>
-  );
+    <Provider store={store}>
+      <Comments />
+    </Provider>
+  )
 }
 
-export default App;
+export default App

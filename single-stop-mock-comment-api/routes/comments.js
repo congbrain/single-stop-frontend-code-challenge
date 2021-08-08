@@ -5,6 +5,8 @@ const commentsController = require('./../controllers/comments')
 router.get('/', (req, res, next) => res.json(commentsController.getComments()))
 
 router.post('/', (req, res, next) => {
+  console.log(req.body);
+  res.header("Access-Control-Allow-Headers","*");
   const { comment: requestComment } = req.body
 
   if (!requestComment) {
