@@ -11,7 +11,7 @@ pixel-perfect match (i.e. default font-types can differ, font-sizes can be eyeba
 
 ![image of app](ui-screenshots/populated-state.png)
  
-## Feature Requirements
+## Feature Requirements 
 1. The comment count in the main heading should update when comments are added or deleted
 2. The comment count should **not** display when there are zero comments.
 3. When a comment is successfully submitted, the email input and comment inputs should automatically clear.
